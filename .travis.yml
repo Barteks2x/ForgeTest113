@@ -1,0 +1,15 @@
+sudo: required
+dist: trusty
+
+language: java
+cache:
+  directories:
+  - $HOME/.gradle
+jdk:
+  - openjdk8
+
+env: GRADLE_OPTS="-Xmx3000M"
+script: ./gradlew build
+notifications:
+  email: false
+ 
